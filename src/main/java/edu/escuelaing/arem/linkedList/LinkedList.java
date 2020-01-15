@@ -56,7 +56,7 @@ public class LinkedList {
      * @param index Es el indice en el cual se quiere buscar dentro de la linked list.
      * @return Retorna el numero ubicado en el indice dado.
      */
-    public double getNumber(int index){
+    public double get(int index){
         return 0;
     }
     
