@@ -33,7 +33,7 @@ public class Calculadora {
     private double calcularSumatoria(LinkedList lista){
         sumatoria = 0;
         for(int i=0; i<lista.size();i++){
-            //sumatoria = sumatoria + lista.get(i);
+            sumatoria = sumatoria + lista.get(i).getValor();
         }
         return sumatoria;
     }
@@ -46,7 +46,7 @@ public class Calculadora {
     private double calcularSumatoriaDEstandar(LinkedList lista){
         sumatoriaDEstandar = 0;
         for(int i=0; i<lista.size();i++){
-            //sumatoriaDEstandar = sumatoriaDEstandar + Math.pow(lista.get(i) - media , 2);
+            sumatoriaDEstandar = sumatoriaDEstandar + Math.pow(lista.get(i).getValor() - media , 2);
         }
         return sumatoriaDEstandar;
     }

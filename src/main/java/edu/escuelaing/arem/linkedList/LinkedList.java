@@ -14,7 +14,7 @@ import java.util.ListIterator;
  *
  * @author Juan David
  */
-public class LinkedList implements List {
+public class LinkedList implements List<Nodo> {
 
     //Atributos
     private int size;
@@ -23,48 +23,6 @@ public class LinkedList implements List {
 
     public LinkedList() {
         this.size = 0;
-    }
-
-    /**
-     * Metodo que permite agregar un nodo.
-     *
-     * @param nodo
-     */
-    public void agregarNodo(Nodo nodo) {
-        if (nodoPrimero.equals(null)) {
-            nodoPrimero = nodo;
-            nodoUltimo = nodo;
-            nodo.setPosicion(size);
-            size += 1;
-
-        } else {
-            nodoUltimo.setSiguiente(nodo);
-            nodo.setAnterior(nodoUltimo);
-            nodo.setPosicion(size);
-            nodoUltimo = nodo;
-            size += 1;
-        }
-    }
-
-    /**
-     * Metodo que permite eliminar un nodo.
-     */
-    public void eliminarNodo() {
-
-    }
-
-    /**
-     * Medoto que permite cambiar al siguiente nodo.
-     */
-    public void siguienteNodo() {
-
-    }
-
-    /**
-     * Metodo que permite cambiar al nodo anterior.
-     */
-    public void anteriorNodo() {
-
     }
 
     /**
@@ -95,32 +53,33 @@ public class LinkedList implements List {
         }
         return buscar;
     }
+    
+    public Nodo getPrimerNodo(){
+        return nodoPrimero;
+    }
+    
+    public Nodo getUltimoNodo(){
+        return nodoUltimo;
+    }
 
+    public boolean add(Nodo nodo) {
+        if (nodoPrimero == null) {
+            nodoPrimero = nodo;
+            nodoUltimo = nodo;
+            nodo.setPosicion(size);
+            size += 1;
+
+        } else {
+            nodoUltimo.setSiguiente(nodo);
+            nodo.setAnterior(nodoUltimo);
+            nodo.setPosicion(size);
+            nodoUltimo = nodo;
+            size += 1;
+        }
+        return true;
+    }
+    
     public boolean isEmpty() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public boolean add(Object e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public boolean containsAll(Collection c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void clear() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public Object set(int index, Object element) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void add(int index, Object element) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public Object remove(int index) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -128,7 +87,7 @@ public class LinkedList implements List {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public Iterator iterator() {
+    public Iterator<Nodo> iterator() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -136,7 +95,7 @@ public class LinkedList implements List {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public Object[] toArray(Object[] a) {
+    public <T> T[] toArray(T[] a) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -144,19 +103,39 @@ public class LinkedList implements List {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public boolean addAll(Collection c) {
+    public boolean containsAll(Collection<?> c) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public boolean addAll(int index, Collection c) {
+    public boolean addAll(Collection<? extends Nodo> c) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public boolean removeAll(Collection c) {
+    public boolean addAll(int index, Collection<? extends Nodo> c) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public boolean retainAll(Collection c) {
+    public boolean removeAll(Collection<?> c) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public boolean retainAll(Collection<?> c) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void clear() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Nodo set(int index, Nodo element) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void add(int index, Nodo element) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Nodo remove(int index) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -168,16 +147,18 @@ public class LinkedList implements List {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public ListIterator listIterator() {
+    public ListIterator<Nodo> listIterator() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public ListIterator listIterator(int index) {
+    public ListIterator<Nodo> listIterator(int index) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public List subList(int fromIndex, int toIndex) {
+    public List<Nodo> subList(int fromIndex, int toIndex) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    
 
 }
