@@ -13,11 +13,13 @@ public class Nodo {
     
     //Atributos
     private double valor;
+    private int posicion;
     private Nodo anterior;
     private Nodo siguiente;
     
-    public Nodo (double valor, Nodo anterior, Nodo siguiente){
+    public Nodo (double valor,int posicion, Nodo anterior, Nodo siguiente){
         this.valor = valor;
+        this.posicion = posicion;
         this.anterior = anterior;
         this.siguiente = siguiente;
     }
@@ -68,6 +70,22 @@ public class Nodo {
      */
     public void setSiguiente(Nodo siguiente){
         this.siguiente = siguiente;
+    }
+    
+    /**
+     * Metodo que permite obtener la posicion del nodo.
+     * @return Retorna la posicion del nodo.
+     */
+    public int getPosicion(){
+        return posicion;
+    }
+    
+    /**
+     * Metodo que permite cambiar la posicion del nodo.
+     * @param posicion Es la nueva posicion del nodo.
+     */
+    public void setPosicion(int posicion){
+        this.posicion = posicion;
     }
     
 }

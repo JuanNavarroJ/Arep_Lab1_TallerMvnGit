@@ -15,76 +15,85 @@ import java.util.ListIterator;
  * @author Juan David
  */
 public class LinkedList implements List {
-    
+
     //Atributos
-    
     private int size;
     private Nodo nodoPrimero;
     private Nodo nodoUltimo;
-    private int posicion;
-    
-    public LinkedList (){
+
+    public LinkedList() {
         this.size = 0;
-        this.posicion = 0;
     }
-    
+
     /**
      * Metodo que permite agregar un nodo.
+     *
      * @param nodo
      */
-    public void agregarNodo(Nodo nodo){
-        if(nodoPrimero.equals(null)){
-            this.nodoPrimero = nodo;
+    public void agregarNodo(Nodo nodo) {
+        if (nodoPrimero.equals(null)) {
+            nodoPrimero = nodo;
+            nodoUltimo = nodo;
+            nodo.setPosicion(size);
             size += 1;
-            posicion +=1;
-            if(nodoUltimo.equals(null)){
-                this.nodoUltimo = nodo;
-            }
-        }else{
-            
-            nodoPrimero.setSiguiente(nodo);
-            this.nodoUltimo = nodo;
+
+        } else {
+            nodoUltimo.setSiguiente(nodo);
+            nodo.setAnterior(nodoUltimo);
+            nodo.setPosicion(size);
+            nodoUltimo = nodo;
             size += 1;
-            posicion +=1;
         }
     }
-    
+
     /**
      * Metodo que permite eliminar un nodo.
      */
-    public void eliminarNodo(){
-        
+    public void eliminarNodo() {
+
     }
-    
+
     /**
      * Medoto que permite cambiar al siguiente nodo.
      */
-    public void siguienteNodo(){
-        
+    public void siguienteNodo() {
+
     }
-    
+
     /**
      * Metodo que permite cambiar al nodo anterior.
      */
-    public void anteriorNodo(){
-        
+    public void anteriorNodo() {
+
     }
-    
+
     /**
      * Metodo que permite obtener el tamaño de la linked list
+     *
      * @return Retorna el tamaño de la lista
      */
-    public int size(){
+    public int size() {
         return size;
     }
-    
+
     /**
      * Metodo que permite obtener el numero que se encuentra en un indece dado.
-     * @param index Es el indice en el cual se quiere buscar dentro de la linked list.
+     *
+     * @param index Es el indice en el cual se quiere buscar dentro de la linked
+     * list.
      * @return Retorna el numero ubicado en el indice dado.
      */
-    public Nodo get(int index){
-        return null;
+    public Nodo get(int index) {
+        Nodo buscar = nodoPrimero;
+        boolean encontrado = false;
+        while (!encontrado) {
+            if (buscar.getPosicion() == index) {
+                encontrado = true;
+            } else {
+                buscar = buscar.getSiguiente();
+            }
+        }
+        return buscar;
     }
 
     public boolean isEmpty() {
@@ -170,5 +179,5 @@ public class LinkedList implements List {
     public List subList(int fromIndex, int toIndex) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }
