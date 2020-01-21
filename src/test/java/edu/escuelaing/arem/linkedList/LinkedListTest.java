@@ -38,7 +38,41 @@ public class LinkedListTest {
         lista.add(n10);
         
         
-        assertTrue(true);
+        assertTrue(lista.size()==10);
+        
+    }
+    
+    @Test
+    public void deberiaEliminarUnNodoEspecifico(){
+        LinkedList lista = new LinkedList();
+        Nodo n1 = new Nodo(186.0,0,null,null);
+        lista.add(n1);
+        Nodo n2 = new Nodo(699.0,0,null,null);
+        lista.add(n2);
+        Nodo n3 = new Nodo(132.0,0,null,null);
+        lista.add(n3);
+        
+        lista.remove(n2);
+        
+        assertTrue(n1.getSiguiente().equals(n3));
+        assertTrue(n3.getAnterior().equals(n1));
+        
+    }
+    
+    @Test
+    public void deberiaEliminarUnNodoPorPosicion(){
+        LinkedList lista = new LinkedList();
+        Nodo n1 = new Nodo(186.0,0,null,null);
+        lista.add(n1);
+        Nodo n2 = new Nodo(699.0,0,null,null);
+        lista.add(n2);
+        Nodo n3 = new Nodo(132.0,0,null,null);
+        lista.add(n3);
+        
+        lista.remove(1);
+        
+        assertTrue(n1.getSiguiente().equals(n3));
+        assertTrue(n3.getAnterior().equals(n1));
         
     }
 }
