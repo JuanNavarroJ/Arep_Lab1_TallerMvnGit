@@ -53,26 +53,29 @@ public class LinkedList implements List<Nodo> {
         }
         return buscar;
     }
-    
+
     /**
      * Metodo que permite obtener el Nodo llamado cabeza de la linkedList.
+     *
      * @return Retorna Retorna el nodo cabeza de la linkedList.
      */
-    public Nodo getPrimerNodo(){
+    public Nodo getPrimerNodo() {
         return nodoPrimero;
     }
-    
+
     /**
      * Metodo que permite obtener el Nodo llamado cola de la linkedList.
+     *
      * @return Retorna el nodo cola de la linkedList.
      */
-    public Nodo getUltimoNodo(){
+    public Nodo getUltimoNodo() {
         return nodoUltimo;
     }
 
     /**
      * Metodo que permite agregar un nodo a la linkedList.
-     * @param nodo  Es el nodo que se quiere agregar a la linkedList.
+     *
+     * @param nodo Es el nodo que se quiere agregar a la linkedList.
      * @return Retorna Si fue posible agregar el nodo a la linkedList.
      */
     public boolean add(Nodo nodo) {
@@ -91,22 +94,26 @@ public class LinkedList implements List<Nodo> {
         }
         return true;
     }
-    
+
     /**
      * Metodo que permite consultar si la linkedList esta vacia.
+     *
      * @return Retorna true si la lista esta vacia y false de lo contrario.
      */
     public boolean isEmpty() {
         boolean isEmpty = true;
-        if(size>=0){
+        if (size >= 0) {
             isEmpty = false;
         }
         return isEmpty;
     }
-    
+
     /**
-     * Metodo que permite remover un nodo de la linkedList segun su posicion en ella.
-     * @param index Es el indice que indica la posicion del nodo en la linkedList.
+     * Metodo que permite remover un nodo de la linkedList segun su posicion en
+     * ella.
+     *
+     * @param index Es el indice que indica la posicion del nodo en la
+     * linkedList.
      * @return Retorna el nodo que va a hacer removido de la linkedList.
      */
     public Nodo remove(int index) {
@@ -121,25 +128,29 @@ public class LinkedList implements List<Nodo> {
         }
         remove(nodoRemove);
         return nodoRemove;
-        
+
     }
-    
+
     /**
      * Metodo que permite remover un nodo de la linkedList.
+     *
      * @param nodo Es el nodo que se quiere eliminar.
      */
-    public void remove(Nodo nodo){
+    public void remove(Nodo nodo) {
         Nodo tempAnterior = nodo.getAnterior();
         Nodo tempSiguiente = nodo.getSiguiente();
         tempAnterior.setSiguiente(tempSiguiente);
         tempSiguiente.setAnterior(tempAnterior);
-        if(nodo.equals(nodoPrimero)){
+        if (nodo.equals(nodoPrimero)) {
             nodoPrimero = null;
-        }else if (nodo.equals(nodoUltimo)){
-            nodoUltimo = null;
+        } else if (nodo.equals(nodoUltimo)) {
+            nodoUltimo = nodo.getAnterior();
+        }
+        if (size > 0) {
+            size -= 1;
         }
     }
-    
+
     public boolean remove(Object o) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
@@ -211,5 +222,5 @@ public class LinkedList implements List<Nodo> {
     public List<Nodo> subList(int fromIndex, int toIndex) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }
