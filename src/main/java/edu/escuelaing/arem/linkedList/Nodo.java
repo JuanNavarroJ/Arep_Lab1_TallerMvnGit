@@ -6,7 +6,7 @@
 package edu.escuelaing.arem.linkedList;
 
 /**
- *
+ * Clase Nodo que representa un nodo dentro de la linkedList 
  * @author juan.navarro
  */
 public class Nodo {

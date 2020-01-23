@@ -42,8 +42,6 @@ public class CalculadoraTest {
         Nodo n10 = new Nodo(1601.0,0,null,null);
         lista.add(n10);
         
-        
-        assertTrue(true);
         assertTrue(cal.calcularMedia(lista) == 638.9);
     }
     
@@ -75,4 +73,111 @@ public class CalculadoraTest {
         assertTrue(cal.calcularDesviacionEstandar(lista) == 625.6339806770231);
     }
 
+    @Test
+    public void deberiaSacarLaDesviacionEstandarDeColumn1() {
+        Calculadora cal = new Calculadora();
+        LinkedList lista = new LinkedList();
+        Nodo n1 = new Nodo(160.0,0,null,null);
+        lista.add(n1);
+        Nodo n2 = new Nodo(591.0,0,null,null);
+        lista.add(n2);
+        Nodo n3 = new Nodo(114.0,0,null,null);
+        lista.add(n3);
+        Nodo n4 = new Nodo(229.0,0,null,null);
+        lista.add(n4);
+        Nodo n5 = new Nodo(230.0,0,null,null);
+        lista.add(n5);
+        Nodo n6 = new Nodo(270.0,0,null,null);
+        lista.add(n6);
+        Nodo n7 = new Nodo(128.0,0,null,null);
+        lista.add(n7);
+        Nodo n8 = new Nodo(1657.0,0,null,null);
+        lista.add(n8);
+        Nodo n9 = new Nodo(624.0,0,null,null);
+        lista.add(n9);
+        Nodo n10 = new Nodo(1503.0,0,null,null);
+        lista.add(n10);
+        assertTrue(cal.calcularDesviacionEstandar(lista) == 572.026844746915);
+    }
+    
+    @Test
+    public void deberiaSacarLaMediaDeColumn1() {
+        Calculadora cal = new Calculadora();
+        LinkedList lista = new LinkedList();
+        Nodo n1 = new Nodo(160.0,0,null,null);
+        lista.add(n1);
+        Nodo n2 = new Nodo(591.0,0,null,null);
+        lista.add(n2);
+        Nodo n3 = new Nodo(114.0,0,null,null);
+        lista.add(n3);
+        Nodo n4 = new Nodo(229.0,0,null,null);
+        lista.add(n4);
+        Nodo n5 = new Nodo(230.0,0,null,null);
+        lista.add(n5);
+        Nodo n6 = new Nodo(270.0,0,null,null);
+        lista.add(n6);
+        Nodo n7 = new Nodo(128.0,0,null,null);
+        lista.add(n7);
+        Nodo n8 = new Nodo(1657.0,0,null,null);
+        lista.add(n8);
+        Nodo n9 = new Nodo(624.0,0,null,null);
+        lista.add(n9);
+        Nodo n10 = new Nodo(1503.0,0,null,null);
+        lista.add(n10);
+        assertTrue(cal.calcularMedia(lista) == 550.6);
+    }
+    
+    @Test
+    public void deberiaSacarLaDesviacionEstandarDeColumn2() {
+        Calculadora cal = new Calculadora();
+        LinkedList lista = new LinkedList();
+        Nodo n1 = new Nodo(15.0,0,null,null);
+        lista.add(n1);
+        Nodo n2 = new Nodo(69.9,0,null,null);
+        lista.add(n2);
+        Nodo n3 = new Nodo(6.5,0,null,null);
+        lista.add(n3);
+        Nodo n4 = new Nodo(22.4,0,null,null);
+        lista.add(n4);
+        Nodo n5 = new Nodo(28.4,0,null,null);
+        lista.add(n5);
+        Nodo n6 = new Nodo(65.9,0,null,null);
+        lista.add(n6);
+        Nodo n7 = new Nodo(19.4,0,null,null);
+        lista.add(n7);
+        Nodo n8 = new Nodo(198.7,0,null,null);
+        lista.add(n8);
+        Nodo n9 = new Nodo(38.8,0,null,null);
+        lista.add(n9);
+        Nodo n10 = new Nodo(138.2,0,null,null);
+        lista.add(n10);
+        assertTrue(cal.calcularDesviacionEstandar(lista) == 62.25583060601187);
+    }
+    
+    @Test
+    public void deberiaSacarLaMediaDeColumn2() {
+        Calculadora cal = new Calculadora();
+        LinkedList lista = new LinkedList();
+        Nodo n1 = new Nodo(15.0,0,null,null);
+        lista.add(n1);
+        Nodo n2 = new Nodo(69.9,0,null,null);
+        lista.add(n2);
+        Nodo n3 = new Nodo(6.5,0,null,null);
+        lista.add(n3);
+        Nodo n4 = new Nodo(22.4,0,null,null);
+        lista.add(n4);
+        Nodo n5 = new Nodo(28.4,0,null,null);
+        lista.add(n5);
+        Nodo n6 = new Nodo(65.9,0,null,null);
+        lista.add(n6);
+        Nodo n7 = new Nodo(19.4,0,null,null);
+        lista.add(n7);
+        Nodo n8 = new Nodo(198.7,0,null,null);
+        lista.add(n8);
+        Nodo n9 = new Nodo(38.8,0,null,null);
+        lista.add(n9);
+        Nodo n10 = new Nodo(138.2,0,null,null);
+        lista.add(n10);
+        assertTrue(cal.calcularMedia(lista) == 60.32000000000001);
+    }
 }

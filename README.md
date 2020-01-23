@@ -1,92 +1,62 @@
-# Project Title
+# Introducción a sistemas complejos, Java, Maven y GitHub
 
-One Paragraph of project description goes here
 
-## Getting Started
+Este proyecto permite calcular la media y desviación estándar de un grupo de datos dados, para realizar el ejercicio se utilizo una propia lista enlazada la cual permite almacenar cada dato ingresado y poder procesarlo. 
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
+Debemos tener los siguientes programas instalados:
 ```
-Give examples
-
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-
+- Maven 
+- Git
 ```
 
-And repeat
+## ¿Como instalar y probar?
 
-```
-until finished
+Debemos tener un editor java instalado y git, es opcional tener instalado el uso de maven que permitira un mejor control sobre el proyecto.
 
-```
+1. Entramos la terminal del dispositivo y accedemos a la carpeta en la cual queremos guardar el proyecto. 
 
-End with an example of getting some data out of the system or using it for a little demo
+![Prueba1](https://github.com/JuanNavarroJ/LibreriaCnyt-2019/blob/master/ImagenesDeInstalacion/Paso1.PNG?raw=true)
 
-## Running the tests
+2. Usando los comandos de git empezamos con : **$ git clone** https://github.com/JuanNavarroJ/LibreriaCnyt-2019.git 
 
-Explain how to run the automated tests for this system
+![parte2](https://github.com/JuanNavarroJ/LibreriaCnyt-2019/blob/master/ImagenesDeInstalacion/Paso2.PNG?raw=true)
 
-### Break down into end to end tests
+3. Ingresamos a la carpeta que descargamos desde Github.
 
-Explain what these tests test and why
+![parte3](https://github.com/JuanNavarroJ/LibreriaCnyt-2019/blob/master/ImagenesDeInstalacion/Paso3.PNG?raw=true)
 
-```
-Give an example
+4. Usando maven podemos en la linea de comandos compilar y ejecutar el proyecto con el codigo **$ mvn package**
 
-```
+![parte4](https://github.com/JuanNavarroJ/LibreriaCnyt-2019/blob/master/ImagenesDeInstalacion/Paso4.PNG?raw=true)
 
-### And coding style tests
+![parte4b](https://github.com/JuanNavarroJ/LibreriaCnyt-2019/blob/master/ImagenesDeInstalacion/Paso5.PNG?raw=true)
 
-Explain what these tests test and why
+5. Si solo deseas correr las pruebas podemos ejecutar el comando maven **$ mvn test**
 
-```
-Give an example
+![testMaven](https://github.com/JuanNavarroJ/LibreriaCnyt-2019/blob/master/ImagenesDeInstalacion/Paso6.PNG?raw=true)
 
-```
+6. Si deseas conocer a profundidad el funcionamiento del codigo, podemos abrir el proyecto en un editor java.
 
-## Deployment
+![image](https://github.com/JuanNavarroJ/LibreriaCnyt-2019/blob/master/ImagenesDeInstalacion/Paso7.PNG?raw=true)
 
-Add additional notes about how to deploy this on a live system
+## Desarrollo
 
-##Built With
 
--   [Dropwizard](http://www.dropwizard.io/1.0.2/docs/)  - The web framework used
--   [Maven](https://maven.apache.org/)  - Dependency Management
--   [ROME](https://rometools.github.io/rome/)  - Used to generate RSS Feeds
+Construido con:
 
-## Contributing
+-   [Maven](https://maven.apache.org/)  - Control de dependencias
 
-Please read  [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426)  for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
 
-We use  [SemVer](http://semver.org/)  for versioning. For the versions available, see the  [tags on this repository](https://github.com/your/project/tags).
+## Autor
 
-## Author
+-   **Juan David Navarro Jimenez**    -  [JuanNavarroJ](https://github.com/JuanNavarroJ)
 
--   **Juan David Navarro Jimenez**  -  _Initial work_  -  [JuanNavarroJ](https://github.com/JuanNavarroJ)
-
-See also the list of  [contributors](https://github.com/your/project/contributors)  who participated in this project.
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0 - see the  [LICENSE.md]([https://github.com/JuanNavarroJ/ProyectoPSP0/blob/master/LICENSE.txt](https://github.com/JuanNavarroJ/ProyectoPSP0/blob/master/LICENSE.txt))  file for details
-
-## Acknowledgments
-
--   Hat tip to anyone whose code was used
--   Inspiration
--   etc
+This project is licensed under the GNU General Public License v3.0 - see the  [LICENSE.md]([https://github.com/JuanNavarroJ/ProyectoPSP0/blob/master/LICENSE.txt](https://github.com/JuanNavarroJ/ProyectoPSP0/blob/master/LICENSE.txt))  file for details.

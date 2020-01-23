@@ -8,7 +8,7 @@ package edu.escuelaing.arem.calculadora;
 import edu.escuelaing.arem.linkedList.LinkedList;
 
 /**
- *
+ * Clase calculadora que representa una calculadora estadistica basica la cual permite obtener la media y desviacion estandar.
  * @author Juan David
  */
 public class Calculadora {
@@ -27,7 +27,7 @@ public class Calculadora {
     
     /**
      * Metodo que calcula la sumatoria de todos los elementos de la linkedList
-     * @param lista
+     * @param lista Es la linkedList donde esta la informacion que se va a analizar.
      * @return Retorna la suma de todos los elementos de la linkedList
      */
     private double calcularSumatoria(LinkedList lista){
@@ -40,7 +40,7 @@ public class Calculadora {
     
     /**
      * Metodo que permite calcular la sumatoria de la diferencia entre cada elemento de la linkedList y su media al cuadrado.
-     * @param lista
+     * @param lista Es la linkedList donde esta la informacion que se va a analizar.
      * @return Retorna la sumatoria de la diferencia entre cada elemento de la linkedList y su media al cuadrado.
      */
     private double calcularSumatoriaDEstandar(LinkedList lista){
@@ -53,7 +53,7 @@ public class Calculadora {
     
     /**
      * Metodo que permite el calcular la media de los valores dados.
-     * @param lista
+     * @param lista Es la linkedList donde esta la informacion que se va a analizar.
      * @return Retorna la media de los valores dados.
      */
     public double calcularMedia(LinkedList lista){
@@ -64,7 +64,7 @@ public class Calculadora {
     
     /**
      * Metodo que permite calcular la desviacion estandar de los valores dados.
-     * @param lista
+     * @param lista Es la linkedList donde esta la informacion que se va a analizar.
      * @return Retorna la desviacion estandar de los valores dados.
      */
     public double calcularDesviacionEstandar(LinkedList lista){

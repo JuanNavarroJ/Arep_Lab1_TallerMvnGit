@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.ListIterator;
 
 /**
- *
+ * Clase linkedList es una representacion propia de una LinkedList con las funciones basicas para lograr el objetivo del programa.
  * @author Juan David
  */
 public class LinkedList implements List<Nodo> {
@@ -150,6 +150,12 @@ public class LinkedList implements List<Nodo> {
             size -= 1;
         }
     }
+    
+    public void clear() {
+        nodoPrimero = null;
+        nodoUltimo = null;
+        size = 0;
+    }
 
     public boolean remove(Object o) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -188,10 +194,6 @@ public class LinkedList implements List<Nodo> {
     }
 
     public boolean retainAll(Collection<?> c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void clear() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

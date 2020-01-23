@@ -13,7 +13,7 @@ import org.junit.Test;
  * @author Juan David
  */
 public class LinkedListTest {
-    
+
     @Test
     public void deberiaCrearUnaLinkedList() {
         LinkedList lista = new LinkedList();
@@ -22,7 +22,7 @@ public class LinkedListTest {
         Nodo n2 = new Nodo(699.0, 0, null, null);
         lista.add(n2);
         Nodo n3 = new Nodo(132.0, 0, null, null);
-        lista.add(n3);        
+        lista.add(n3);
         Nodo n4 = new Nodo(272.0, 0, null, null);
         lista.add(n4);
         Nodo n5 = new Nodo(291.0, 0, null, null);
@@ -37,11 +37,11 @@ public class LinkedListTest {
         lista.add(n9);
         Nodo n10 = new Nodo(1601.0, 0, null, null);
         lista.add(n10);
-        
+
         assertTrue(lista.size() == 10);
-        
+
     }
-    
+
     @Test
     public void deberiaEliminarUnNodoEspecifico() {
         LinkedList lista = new LinkedList();
@@ -51,14 +51,14 @@ public class LinkedListTest {
         lista.add(n2);
         Nodo n3 = new Nodo(132.0, 0, null, null);
         lista.add(n3);
-        
+
         lista.remove(n2);
-        
+
         assertTrue(n1.getSiguiente().equals(n3));
         assertTrue(n3.getAnterior().equals(n1));
-        
+
     }
-    
+
     @Test
     public void deberiaEliminarUnNodoPorPosicion() {
         LinkedList lista = new LinkedList();
@@ -68,11 +68,37 @@ public class LinkedListTest {
         lista.add(n2);
         Nodo n3 = new Nodo(132.0, 0, null, null);
         lista.add(n3);
-        
+
         lista.remove(1);
-        
+
         assertTrue(n1.getSiguiente().equals(n3));
         assertTrue(n3.getAnterior().equals(n1));
-        
+
+    }
+
+    @Test
+    public void deberiaEliminarUnNodoYLuegoAgregarOtro() {
+        LinkedList lista = new LinkedList();
+        Nodo n1 = new Nodo(186.0, 0, null, null);
+        lista.add(n1);
+        Nodo n2 = new Nodo(699.0, 0, null, null);
+        lista.add(n2);
+        Nodo n3 = new Nodo(132.0, 0, null, null);
+        lista.add(n3);
+
+        lista.remove(n2);
+
+        Nodo n4 = new Nodo(699.0, 0, null, null);
+        lista.add(n4);
+
+        assertTrue(lista.getPrimerNodo().equals(n1));
+        assertTrue(lista.getUltimoNodo().equals(n4));
+
+        assertTrue(n3.getAnterior().equals(n1));
+        assertTrue(n1.getSiguiente().equals(n3));
+
+        assertTrue(n4.getAnterior().equals(n3));
+        assertTrue(n3.getSiguiente().equals(n4));
+
     }
 }
