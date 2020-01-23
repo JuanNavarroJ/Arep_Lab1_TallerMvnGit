@@ -19,29 +19,33 @@ Debemos tener un editor java instalado y git, es opcional tener instalado el uso
 
 1. Entramos la terminal del dispositivo y accedemos a la carpeta en la cual queremos guardar el proyecto. 
 
-![Prueba1](https://github.com/JuanNavarroJ/LibreriaCnyt-2019/blob/master/ImagenesDeInstalacion/Paso1.PNG?raw=true)
+![Prueba1](https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit/blob/master/img/img1.PNG?raw=true))
 
 2. Usando los comandos de git empezamos con : **$ git clone** https://github.com/JuanNavarroJ/LibreriaCnyt-2019.git 
 
-![parte2](https://github.com/JuanNavarroJ/LibreriaCnyt-2019/blob/master/ImagenesDeInstalacion/Paso2.PNG?raw=true)
+![parte2](https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit/blob/master/img/img2.PNG?raw=true)
 
 3. Ingresamos a la carpeta que descargamos desde Github.
 
-![parte3](https://github.com/JuanNavarroJ/LibreriaCnyt-2019/blob/master/ImagenesDeInstalacion/Paso3.PNG?raw=true)
+![parte3](https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit/blob/master/img/img3.PNG?raw=true)
 
 4. Usando maven podemos en la linea de comandos compilar y ejecutar el proyecto con el codigo **$ mvn package**
 
-![parte4](https://github.com/JuanNavarroJ/LibreriaCnyt-2019/blob/master/ImagenesDeInstalacion/Paso4.PNG?raw=true)
+![parte4](https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit/blob/master/img/img4.PNG?raw=true)
 
-![parte4b](https://github.com/JuanNavarroJ/LibreriaCnyt-2019/blob/master/ImagenesDeInstalacion/Paso5.PNG?raw=true)
+![parte4b](https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit/blob/master/img/img5.PNG?raw=true)
 
 5. Si solo deseas correr las pruebas podemos ejecutar el comando maven **$ mvn test**
 
-![testMaven](https://github.com/JuanNavarroJ/LibreriaCnyt-2019/blob/master/ImagenesDeInstalacion/Paso6.PNG?raw=true)
+![testMaven](https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit/blob/master/img/img6.PNG?raw=true)
 
 6. Si deseas conocer a profundidad el funcionamiento del codigo, podemos abrir el proyecto en un editor java.
 
-![image](https://github.com/JuanNavarroJ/LibreriaCnyt-2019/blob/master/ImagenesDeInstalacion/Paso7.PNG?raw=true)
+![image](https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit/blob/master/img/img7.PNG?raw=true)
+
+6. Para generar el javadoc ejecutamos el comando **$ mvn javadoc:javadoc**
+
+![image](https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit/blob/master/img/img7.PNG?raw=true)
 
 ## Desarrollo
 
