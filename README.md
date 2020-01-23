@@ -43,9 +43,11 @@ Debemos tener un editor java instalado y git, es opcional tener instalado el uso
 
 ![image](https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit/blob/master/img/img7.PNG?raw=true)
 
-6. Para generar el javadoc ejecutamos el comando **$ mvn javadoc:javadoc**
+7. Para generar el javadoc ejecutamos el comando **$ mvn javadoc:javadoc**
 
-![image](https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit/blob/master/img/img7.PNG?raw=true)
+![image](https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit/blob/master/img/img8.PNG?raw=true)
+
+![image](https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit/blob/master/img/img9.PNG?raw=true)
 
 ## Desarrollo
 
