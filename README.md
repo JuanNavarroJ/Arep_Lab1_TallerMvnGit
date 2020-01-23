@@ -21,7 +21,7 @@ Debemos tener un editor java instalado y git, es opcional tener instalado el uso
 
 ![Prueba1](https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit/blob/master/img/img1.PNG?raw=true))
 
-2. Usando los comandos de git empezamos con : **$ git clone** https://github.com/JuanNavarroJ/LibreriaCnyt-2019.git 
+2. Usando los comandos de git empezamos con : **$ git clone** https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit
 
 ![parte2](https://github.com/JuanNavarroJ/Arep_Lab1_TallerMvnGit/blob/master/img/img2.PNG?raw=true)
 
